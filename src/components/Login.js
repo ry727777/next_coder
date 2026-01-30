@@ -4,8 +4,16 @@ import "../css/Login.css";
 
 const Login = () => {
   const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault();   // stop page refresh
+
+    // dummy login success
+    navigate("/dashboard");
+  };
+
   return (
-    <div className="login-container">
+    <div className="login-container" onSubmit={handleLogin}>
       <h2>Login</h2>
 
       <form className="login-form">

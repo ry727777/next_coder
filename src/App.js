@@ -4,6 +4,9 @@ import Home from "./components/Home";
 import QuestionList from "./components/QuestionList";
 import QuestionPage from "./components/QuestionPage";
 import Register from "./components/Register";
+import Dashboard from "./components/Dashboard";
+import JavaPractice from "./components/JavaPractice";
+
 
 function App() {
   return (
@@ -11,7 +14,9 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
-        <Route path="/Register" element={<Register />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/practice/java" element={<JavaPractice />} />
       </Routes>
     </Router>
   );
