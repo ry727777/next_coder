@@ -1,0 +1,17 @@
+{
+  "array": [
+    {
+      "id": 1,
+      "title": "Find Maximum Element",
+      "description": "Given an array, find the maximum element.",
+      "visible_cases": [
+        { "input": "5\n1 2 3 4 5", "expected": "5\n" }
+      ],
+      "hidden_cases": [
+        { "input": "3\n10 50 30", "expected": "50\n" }
+      ]
+    }
+  ],
+  "linkedlist": [],
+  "binarysearch": []
+}
