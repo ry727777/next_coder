@@ -6,6 +6,8 @@ import QuestionPage from "./components/QuestionPage";
 import Register from "./components/Register";
 import Dashboard from "./components/Dashboard";
 import JavaPractice from "./components/JavaPractice";
+import JavaBasics from "./components/JavaBasics";
+import JavaBasicQuestion from "./components/JavaBasicQuestion";
 
 
 function App() {
@@ -17,6 +19,11 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/practice/java" element={<JavaPractice />} />
+        <Route path="/practice/java/basics" element={<JavaBasics />} />
+        <Route
+          path="/practice/java/basics/:id"
+          element={<JavaBasicQuestion />}
+        />
       </Routes>
     </Router>
   );
