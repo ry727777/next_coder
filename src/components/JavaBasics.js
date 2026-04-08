@@ -9,11 +9,9 @@ const JavaBasics = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/questions/filter", {
-        params: {
-          language: "JAVA",
-          topic: "Java Basics",
-        },
+      .get("http://localhost:8080/api/questions/filter-with-status", {
+        params: { topic: "Java Basics" },
+        withCredentials: true
       })
       .then((res) => {
         setQuestions(res.data);
@@ -36,7 +34,17 @@ const JavaBasics = () => {
             onClick={() => navigate(`/practice/java/basics/${q.id}`)}
           >
             <h4>{q.title}</h4>
-            <span className="level">{q.difficulty}</span>
+
+            <div className="meta">
+              <span className="level">{q.difficulty}</span>
+
+              <span
+                className={`status ${q.status === "SOLVED" ? "solved" : "unsolved"
+                  }`}
+              >
+                {q.status}
+              </span>
+            </div>
           </div>
         ))}
       </div>

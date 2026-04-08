@@ -6,6 +6,8 @@ import Editor from "@monaco-editor/react";
 import "../css/JavaBasicQuestion.css";
 import Split from "react-split";
 
+axios.defaults.withCredentials = true;
+
 const JavaBasicQuestion = () => {
   const { id } = useParams();
 

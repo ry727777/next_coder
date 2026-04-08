@@ -31,12 +31,12 @@ const Home = () => {
           >
             Start Practicing
           </button>
-          <button
+          {/* <button
             className="secondary-btn"
             onClick={() => navigate("/login")}
           >
             Login
-          </button>
+          </button> */}
         </div>
       </section>
 
