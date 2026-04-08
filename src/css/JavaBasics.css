@@ -44,3 +44,39 @@
   border-radius: 12px;
   font-size: 12px;
 }
+
+.meta {
+  display: flex;
+  justify-content: space-between; /* 🔥 pushes status to right */
+  align-items: center;
+  margin-top: 8px;
+  gap: 10px;
+}
+
+/* Difficulty (already yours, keep it) */
+.level {
+  background: #28a745;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+/* Status Base */
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+/* SOLVED → Green */
+.status.solved {
+  background: #28a745;
+}
+
+/* UNSOLVED → Red */
+.status.unsolved {
+  background: #dc3545;
+}
